@@ -4,10 +4,12 @@
 
   --border-radius__btn: 15px;
 
+  --margin__nav-bar: 20px;
   --margin__text: 20px 0;
   --margin__btn: 0 0 20px;
 
-  --padding__section: 20px 15px;
+  --padding__section-01: 20px 15px;
+  --padding__section-02: 20px;
   --padding__btn: 15px 20px;
 
   --font-size__header: 35px;
@@ -43,6 +45,15 @@ h1,
 h2 {
   margin: 0;
 }
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
 /* .
 .
 .
@@ -54,15 +65,93 @@ h2 {
 .nav-bar {
   display: flex;
   justify-content: space-between;
-  padding: var(--padding__section);
+  padding: var(--padding__section-01);
 }
 
-.nav-bar__btn-menu {
+.nav-bar__btn {
   display: flex;
   align-items: center;
   border: none;
   padding: 0;
   background-color: var(--color__white-almost);
+}
+
+.effect__dark-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  opacity: 50%;
+}
+.effect__dark-background.hidden {
+  display: none;
+}
+
+.nav-bar__collapsible-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  height: 100vh;
+  overflow: auto;
+  padding: var(--padding__section-02);
+  background-color: var(--color__white-almost);
+  transition: 0.5s;
+}
+.nav-bar__collapsible-menu.hidden {
+  width: 0;
+  padding: 20px 0;
+}
+
+.nav-bar__btn-box {
+  display: flex;
+  justify-content: end;
+  margin-bottom: var(--margin__nav-bar);
+}
+
+.nav-bar__txt-and-icon {
+  display: flex;
+  margin-bottom: var(--margin__nav-bar);
+}
+
+.nav-bar__txt {
+  font-size: var(--font-size__paragraph);
+  font-weight: 500;
+  color: var(--color__gray-medium);
+}
+
+.nav-bar__txt.link {
+  margin-bottom: var(--margin__nav-bar);
+}
+
+.nav-bar__icon {
+  object-fit: contain;
+  transition: 0.5s;
+}
+.nav-bar__icon.collapsed {
+  transform: rotate(180deg);
+}
+
+.nav-bar__icon.right {
+  margin-left: 10px;
+}
+.nav-bar__icon.left {
+  margin-right: 10px;
+}
+
+.nav-bar__collapsible-content {
+  padding-left: 20px;
+  overflow: hidden;
+  max-height: 200px;
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+.nav-bar__collapsible-content.hidden {
+  max-height: 0;
 }
 /* .
 .
@@ -77,7 +166,7 @@ h2 {
 }
 
 .hero__section-content {
-  padding: var(--padding__section);
+  padding: var(--padding__section-01);
   text-align: center;
 }
 

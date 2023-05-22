@@ -21,11 +21,99 @@
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
   </head>
   <body>
+    <div
+      class="effect__dark-background hidden"
+      id="effect-dark-background"
+    ></div>
     <nav class="nav-bar">
       <img class="nav-bar__logo" src="./images/logo.svg" alt="snap logo" />
-      <button class="nav-bar__btn-menu" aria-label="menu button">
+      <button class="nav-bar__btn" id="btn-open-menu" aria-label="open menu">
         <img src="./images/icon-menu.svg" alt="icon menu" />
       </button>
+      <section class="nav-bar__collapsible-menu hidden" id="nav-bar-menu">
+        <div class="nav-bar__btn-box">
+          <button
+            class="nav-bar__btn"
+            id="btn-close-menu"
+            aria-label="close menu"
+          >
+            <img src="./images/icon-close-menu.svg" alt="icon close menu" />
+          </button>
+        </div>
+        <ul>
+          <li class="nav-bar__collapsible-list">
+            <div class="nav-bar__txt-and-icon" id="collapsible-features">
+              <h1 class="nav-bar__txt">Features</h1>
+              <img
+                class="nav-bar__icon right collapsed"
+                id="features-icon"
+                src="./images/icon-arrow-up.svg"
+                alt="icon arrow up"
+              />
+            </div>
+            <ul
+              class="nav-bar__collapsible-content hidden"
+              id="features-content"
+            >
+              <li class="nav-bar__txt-and-icon">
+                <img
+                  class="nav-bar__icon left"
+                  src="./images/icon-todo.svg"
+                  alt="icon todo"
+                />
+                <h1 class="nav-bar__txt">Todo List</h1>
+              </li>
+              <li class="nav-bar__txt-and-icon">
+                <img
+                  class="nav-bar__icon left"
+                  src="./images/icon-calendar.svg"
+                  alt="icon calendar"
+                />
+                <h1 class="nav-bar__txt">Calendar</h1>
+              </li>
+              <li class="nav-bar__txt-and-icon">
+                <img
+                  class="nav-bar__icon left"
+                  src="./images/icon-reminders.svg"
+                  alt="icon reminders"
+                />
+                <h1 class="nav-bar__txt">Reminders</h1>
+              </li>
+              <li class="nav-bar__txt-and-icon">
+                <img
+                  class="nav-bar__icon left"
+                  src="./images/icon-planning.svg"
+                  alt="icon planning"
+                />
+                <h1 class="nav-bar__txt">Planning</h1>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-bar__collapsible-list">
+            <div class="nav-bar__txt-and-icon" id="collapsible-company">
+              <h1 class="nav-bar__txt">Company</h1>
+              <img
+                class="nav-bar__icon right collapsed"
+                id="company-icon"
+                src="./images/icon-arrow-up.svg"
+                alt="icon arrow up"
+              />
+            </div>
+            <ul
+              class="nav-bar__collapsible-content hidden"
+              id="company-content"
+            >
+              <li class="nav-bar__txt link">History</li>
+              <li class="nav-bar__txt link">Our Team</li>
+              <li class="nav-bar__txt link">Blog</li>
+            </ul>
+          </li>
+          <li class="nav-bar__txt link">Careers</li>
+          <li class="nav-bar__txt link">About</li>
+        </ul>
+        <button>Login</button>
+        <button>Register</button>
+      </section>
     </nav>
     <main class="hero">
       <img
