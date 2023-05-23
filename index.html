@@ -40,19 +40,23 @@
             <img src="./images/icon-close-menu.svg" alt="icon close menu" />
           </button>
         </div>
-        <ul>
+        <ul class="nav-bar__links-section">
           <li class="nav-bar__collapsible-list">
             <div class="nav-bar__txt-and-icon" id="collapsible-features">
               <h1 class="nav-bar__txt">Features</h1>
-              <img
-                class="nav-bar__icon right collapsed"
-                id="features-icon"
-                src="./images/icon-arrow-up.svg"
-                alt="icon arrow up"
-              />
+              <div class="nav-bar__icon right collapsed" id="features-icon">
+                <svg viewBox="0 0 10 6">
+                  <path
+                    class="svg-path"
+                    stroke-width="1.5"
+                    fill="none"
+                    d="m1 5 4-4 4 4"
+                  />
+                </svg>
+              </div>
             </div>
             <ul
-              class="nav-bar__collapsible-content hidden"
+              class="nav-bar__collapsible-content features hidden"
               id="features-content"
             >
               <li class="nav-bar__txt-and-icon">
@@ -92,15 +96,19 @@
           <li class="nav-bar__collapsible-list">
             <div class="nav-bar__txt-and-icon" id="collapsible-company">
               <h1 class="nav-bar__txt">Company</h1>
-              <img
-                class="nav-bar__icon right collapsed"
-                id="company-icon"
-                src="./images/icon-arrow-up.svg"
-                alt="icon arrow up"
-              />
+              <div class="nav-bar__icon right collapsed" id="company-icon">
+                <svg viewBox="0 0 10 6">
+                  <path
+                    class="svg-path"
+                    stroke-width="1.5"
+                    fill="none"
+                    d="m1 5 4-4 4 4"
+                  />
+                </svg>
+              </div>
             </div>
             <ul
-              class="nav-bar__collapsible-content hidden"
+              class="nav-bar__collapsible-content company hidden"
               id="company-content"
             >
               <li class="nav-bar__txt link">History</li>
@@ -111,8 +119,10 @@
           <li class="nav-bar__txt link">Careers</li>
           <li class="nav-bar__txt link">About</li>
         </ul>
-        <button>Login</button>
-        <button>Register</button>
+        <section class="nav-bar__btn-section">
+          <button class="nav-bar__btn-login">Login</button>
+          <button class="nav-bar__btn-register">Register</button>
+        </section>
       </section>
     </nav>
     <main class="hero">
@@ -151,6 +161,11 @@
           />
         </footer>
       </section>
+      <img
+        class="hero__img-desktop"
+        src="./images/image-hero-desktop.png"
+        alt="image hero"
+      />
     </main>
   </body>
 </html>
