@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/LeonardoR3D/frontend-mentor-challenge-004.git]
-- Live Site URL: [https://leonardor3d.github.io/frontend-mentor-challenge-004/]
+- Live Site URL: [https://leonardor3d.github.io/FMC-04-Intro-section-with-dropdown-navigation/]
 
 ## My process
 
